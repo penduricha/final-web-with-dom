@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign up information</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style-index.css">
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/addTable.js"></script>
+</head>
+<body>
+    <header class="container-fluid">
+        <div style="width: 1680px;">
+            <img src="../image/website.png" alt="website" class="style-image">
+            <div class="style-group-button">
+                <ul class="list-inline mt-3 ">
+                    <li class="list-inline-item">
+                        <a href="#" style="text-decoration: none;">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#" style="text-decoration: none;" data-bs-toggle="modal" data-bs-target="#openModal">
+                            Đăng ký
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section>
+        <p class="text-center">LIST OF MEMBERS</p>
+        <table class="table table-striped " id="table">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Số điện thoại</th>
+                <th>Ngày sinh</th>
+                <th>Địa chỉ</th>
+            </tr>
+            </thead>
+        </table>
+    </section>
+    <div class="modal fade" id="openModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Thông tin đăng ký</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label for="fullName" class="form-label col-sm-3">Họ và tên</label>
+                        <input type="text" class="form-control" id="fullName">
+                    </div>
+                    <div class="form-group">
+                        <label for="telephone" class="form-label">Số điện thoại</label>
+                        <input type="tel" class="form-control" id="telephone">
+                    </div>
+                    <div class="form-group">
+                        <label for="dateOfBirth" class="form-label">Ngày sinh</label>
+                        <input type="date"  id="dateOfBirth" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="address" class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control" id="address">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success mt-5" data-bs-dismiss="modal" style="width: 100%;" onclick="saveToTable()">Lưu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

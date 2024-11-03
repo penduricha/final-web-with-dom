@@ -1,0 +1,19 @@
+.style-image{
+    height:300px;
+    width:100%;
+}
+
+.style-group-button{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.style-button{
+    width: 90px;
+    height: 70%;
+    background: transparent;
+    color: blue;
+    border: none;
+}
